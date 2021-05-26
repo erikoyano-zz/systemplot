@@ -4,6 +4,7 @@ import "./Access.css";
 import { AiFillPhone } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import { BiTime } from "react-icons/bi";
+import Fade from "react-reveal/Fade";
 
 const ebisu = { lat: 35.646966717162854, lng: 139.71008842664898 };
 

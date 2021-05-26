@@ -1,0 +1,31 @@
+.access-container {
+  margin: 3rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  width: auto;
+  margin-right: 10rem;
+}
+
+.block-featureblock {
+  padding: 4rem;
+}
+
+.map {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.access {
+  padding: 5rem;
+  background: #fff;
+  margin-bottom: 0;
+  margin-top: 10;
+}

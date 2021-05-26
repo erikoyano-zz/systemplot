@@ -20,7 +20,6 @@
 }
 
 .navbar-logo {
-  color: #fff;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -28,6 +27,12 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  width: 200px;
+}
+
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
 }
 
 .nav-menu {
@@ -46,7 +51,7 @@
 }
 
 .nav-links {
-  color: rgb(235, 34, 34);
+  color: black;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -74,7 +79,7 @@
 
 .menu-icon {
   display: none;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 960px) {
@@ -95,7 +100,7 @@
   }
 
   .nav-menu.active {
-    background: #242424;
+    background: #2997ab;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -130,11 +135,6 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-  }
-
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
   }
 
   .nav-links-mobile {

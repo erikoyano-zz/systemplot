@@ -15,6 +15,11 @@
   color: #fff;
 }
 
+.footer-link-items > h2 {
+  color: #fff;
+  font-weight: bold;
+}
+
 .footer-link-wrapper {
   display: flex;
 }

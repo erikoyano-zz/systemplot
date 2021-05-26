@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import Access from "./components/Access/Access";
+import Message from "./components/Message/Message";
+import Jobs from "./components/Jobs/Jobs";
 
 function App() {
   return (
@@ -11,7 +14,9 @@ function App() {
       <Navbar />
       <HeroSection />
       <About />
-      <h1>Hello World</h1>
+      <Message />
+      <Jobs />
+      <Access />
       <Footer />
     </>
   );

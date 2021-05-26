@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Menu } from "antd";
 import { Link } from "react-scroll";
 import { GoX, GoThreeBars } from "react-icons/go";
+// import { Button } from "./Button";
 import "./navbar.css";
+import logo from "../../../src/images/logo-1.png";
 
 function Navbar() {
-  const { SubMenu } = Menu;
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -26,19 +26,93 @@ function Navbar() {
   window.addEventListener("resize", showButton);
 
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Menu onClick={setClick} selectedKeys={click} mode="horizontal">
-          <Menu.Item key="setting:1">Option 1</Menu.Item>
-          <Menu.Item key="setting:2">Option 2</Menu.Item>
-          <Menu.Item key="setting:3">Option 3</Menu.Item>
-          <SubMenu title="option 4">
-            <Menu.Item key="setting:5">Option 5</Menu.Item>
-            <Menu.Item key="setting:6">Option 6</Menu.Item>
-          </SubMenu>
-        </Menu>
-      </div>
-    </nav>
+    <>
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            className="navbar-logo"
+          >
+            <img className="navbar-logo" src={logo}></img>
+          </Link>
+          <div className="menu-icon" onClick={handleClick}>
+            {click ? <GoX /> : <GoThreeBars />}
+          </div>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                ホーム
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                事業内容
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="message"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                会社概要
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="jobs"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                採用情報
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="access"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                アクセス
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 }
+
 export default Navbar;
