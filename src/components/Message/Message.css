@@ -11,15 +11,12 @@
   text-align: center;
   width: 40%;
   line-height: 1.8;
+  margin: 4rem;
+  text-align: left;
 }
 .profile {
   width: 300px;
   height: 300px;
-}
-
-.text {
-  margin: 4rem;
-  text-align: left;
 }
 
 .intro-title {

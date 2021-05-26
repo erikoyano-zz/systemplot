@@ -22,7 +22,7 @@ function Footer() {
             <h2>アクセス</h2>
           </div>
           <div class="footer-link-items">
-            <h2>Rights</h2>
+            <h2>サイトご利用について</h2>
             <p to="/"> 個人情報保護方針 </p>
             <p to="/">個人情報の取り扱い </p>
             <p to="/">情報セキュリティ基本方針 </p>
