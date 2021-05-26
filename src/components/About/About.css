@@ -1,0 +1,24 @@
+.block-featureblock {
+  align-content: center;
+  padding: 4rem;
+  border: 3px solid red;
+  height: auto;
+}
+
+.container-fluid {
+  padding: 0;
+  height: auto;
+  line-height: 1.6;
+  border: 4px solid blue;
+}
+.title-container {
+  margin: 4rem;
+  margin-top: 0;
+  border: 3px solid pink;
+  text-align: center;
+}
+
+.about-title {
+  margin: 4rem;
+  text-align: center;
+}
