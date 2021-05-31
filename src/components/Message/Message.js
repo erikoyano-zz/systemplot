@@ -9,7 +9,7 @@ function Message() {
       <div className="container-fluid">
         <Fade duration={3000}>
           <div className="title-container">
-            <h1 id="shokai">社長挨拶</h1>
+            <h1>社長挨拶</h1>
           </div>
           <div className="intro-container">
             <img className="profile" alt="profile" src={tree} />

@@ -2,6 +2,14 @@
   font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 }
+
+body {
+  overflow-x: hidden !important;
+}
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 .App {
   text-align: center;
 }
@@ -38,5 +46,25 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 110%;
+  }
+
+  h1 {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 120%;
   }
 }

@@ -1,0 +1,293 @@
+.home {
+  width: auto;
+  position: relative;
+}
+
+.carousel {
+  width: auto;
+  display: flex;
+}
+
+.caroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.plot-text {
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 45%;
+}
+
+.logo-front {
+  position: absolute;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 32%;
+}
+
+.herotext-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  margin-left: 58%;
+  width: auto;
+}
+
+.herotext-container > h1 {
+  color: #fff;
+  font-size: 600%;
+  flex-wrap: wrap;
+  line-height: 0.5;
+}
+
+.herotext-container > h2 {
+  color: #fff;
+  width: 70%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 200%;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel img {
+    object-fit: contain;
+    width: 100%;
+    height: 30%;
+  }
+
+  .carousel {
+    margin-top: -15%;
+  }
+
+  img.logo-front {
+    object-fit: scale-down;
+    width: 70%;
+  }
+
+  .logo-front {
+    margin-top: 25%;
+    margin-left: 15%;
+  }
+
+  img.plot-text {
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+  }
+
+  .herotext-container {
+    margin-top: 24%;
+    width: 50%;
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel img {
+    object-fit: contain;
+    width: 100%;
+    height: 80%;
+  }
+
+  .carousel {
+    margin-top: -25%;
+  }
+
+  img.logo-front {
+    object-fit: scale-down;
+    width: 60%;
+  }
+
+  .logo-front {
+    margin-top: 15%;
+    margin-left: 20%;
+  }
+
+  img.plot-text {
+    object-fit: contain;
+    width: 50%;
+    height: 60%;
+  }
+
+  .herotext-container {
+    margin-top: 35%;
+    width: 50%;
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .carousel img {
+    object-fit: contain;
+    width: 100%;
+    height: 80%;
+  }
+
+  .carousel {
+    margin-top: -50%;
+    margin-bottom: -40%;
+  }
+
+  img.logo-front {
+    object-fit: scale-down;
+    width: 60%;
+  }
+
+  .logo-front {
+    margin-top: 15%;
+    margin-left: 20%;
+  }
+
+  img.plot-text {
+    object-fit: contain;
+    width: 50%;
+    height: 80%;
+  }
+
+  .herotext-container {
+    margin-top: 65%;
+    width: 50%;
+    font-size: 30%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .carousel img {
+    object-fit: contain;
+    width: 100%;
+    height: 80%;
+  }
+
+  .carousel {
+    margin-top: -50%;
+    margin-bottom: -40%;
+  }
+
+  img.logo-front {
+    object-fit: scale-down;
+    width: 50%;
+  }
+
+  .logo-front {
+    margin-top: 15%;
+    margin-left: 25%;
+  }
+
+  img.plot-text {
+    object-fit: contain;
+    width: 50%;
+    height: 80%;
+  }
+
+  .herotext-container {
+    margin-top: 75%;
+    width: 50%;
+    font-size: 25%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .carousel img {
+    object-fit: contain;
+    width: 100%;
+    height: 80%;
+  }
+
+  .carousel {
+    margin-top: -80%;
+    margin-bottom: -40%;
+  }
+
+  img.logo-front {
+    object-fit: scale-down;
+    width: 40%;
+  }
+
+  .logo-front {
+    margin-top: 20%;
+    margin-left: 30%;
+  }
+
+  img.plot-text {
+    object-fit: contain;
+    width: 50%;
+    height: 80%;
+  }
+
+  .herotext-container {
+    margin-top: 85%;
+    width: 50%;
+    font-size: 25%;
+  }
+}
+/* @media screen and (max-width: 1024px) {
+  .home {
+    object-fit: contain;
+  }
+  .plot-text {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 45%;
+    width: 50%;
+  }
+  .herotext-container {
+    margin-top: 15%;
+    margin-left: 60%;
+    width: auto;
+  }
+  .herotext-container > h1 {
+    font-size: 400%;
+    flex-wrap: wrap;
+    line-height: 0.5;
+  }
+
+  .herotext-container > h2 {
+    width: 70%;
+    justify-content: flex-end;
+    font-size: 100%;
+    font-weight: 800;
+  }
+  .logo-front {
+    margin-top: 15%;
+    margin-left: 18%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    object-fit: contain;
+  }
+  .plot-text {
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 55%;
+    width: 40%;
+  }
+  .herotext-container {
+    margin-top: 15%;
+    margin-left: 50%;
+    width: auto;
+  }
+  .herotext-container > h1 {
+    font-size: 400%;
+    flex-wrap: wrap;
+    line-height: 0.5;
+  }
+
+  .herotext-container > h2 {
+    width: 70%;
+    justify-content: flex-end;
+    font-size: 100%;
+    font-weight: 800;
+  }
+  .logo-front {
+    margin-top: 25%;
+    margin-left: 18%;
+    width: 60%;
+  }
+} */

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 // import { Button } from "./Button";
+import logo from "../../images/logo-white.png";
 
 function Footer() {
   return (
@@ -29,16 +30,13 @@ function Footer() {
           </div>
         </div>
       </div>
-      <section class="social-media">
-        <div class="social-media-wrap">
-          <div class="footer-logo">
-            <p to="/" className="social-logo">
-              SystemPlot©
-            </p>
-          </div>
-          <small class="website-rights">SystemPlot© 2021</small>
+
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img src={logo} to="/home" className="social-logo" />
         </div>
-      </section>
+        <small class="website-rights">SystemPlot© 2021</small>
+      </div>
     </div>
   );
 }

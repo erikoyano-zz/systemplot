@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { GoX, GoThreeBars } from "react-icons/go";
 // import { Button } from "./Button";
 import "./navbar.css";
-import logo from "../../../src/images/logo-1.png";
+import logo from "../../../src/images/logo-clear.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -37,7 +37,7 @@ function Navbar() {
             duration={1000}
             className="navbar-logo"
           >
-            <img className="navbar-logo" src={logo}></img>
+            <img className="navbar-logo" alt="logo" src={logo}></img>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <GoX /> : <GoThreeBars />}

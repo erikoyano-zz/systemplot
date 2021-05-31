@@ -36,7 +36,7 @@ function Access() {
           </div>
           <div className="access-container">
             <div className="text-container">
-              <h1>SystemPlot</h1>
+              <h1>株式会社システムプロット</h1>
               <h2>
                 <AiFillPhone className="icons" />
                 Tel: 080-1234-1234
