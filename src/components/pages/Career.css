@@ -1,0 +1,51 @@
+.career-text-container {
+  margin: 4rem;
+  text-align: center;
+}
+
+.career-banner {
+  width: 1600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.career-container-fluid > h2 {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1024px) {
+  .career-banner {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .career-container-fluid > h2,
+  p {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .career-container-fluid > h2,
+  p {
+    font-size: 80%;
+    width: 100%;
+    margin: 0;
+  }
+  .career-text-container {
+    margin: 0rem;
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .career-container-fluid > h2,
+  p {
+    font-size: 70%;
+  }
+
+  .career-text-container {
+  }
+}

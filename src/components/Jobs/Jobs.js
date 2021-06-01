@@ -15,10 +15,6 @@ function Jobs() {
               採用については<Link to="/career">こちら</Link>
               をクリックしてください。
             </h2>
-            {/* <h2>
-              採用については<Link to="Career">こちら</Link>
-              をクリックしてください。
-            </h2> */}
           </div>
         </Fade>
       </div>

@@ -9,13 +9,14 @@
 } */
 .text {
   text-align: center;
-  width: 40%;
+  width: 45%;
   line-height: 1.8;
   margin: 4rem;
   text-align: left;
 }
 .profile {
   width: auto;
+  padding: 1rem;
 }
 
 .intro-title {
@@ -30,15 +31,15 @@
 }
 
 .name {
-  font-size: 14px;
+  font-size: 105%;
   text-align: right;
 }
 
 @media only screen and (max-width: 768px) {
-  .intro-title {
-    font-size: 70%;
+  /* .intro-title {
+    font-size: 100%;
     margin: 0;
-  }
+  } */
   .text {
     text-align: center;
     width: 100%;

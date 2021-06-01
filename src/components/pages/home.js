@@ -1,12 +1,22 @@
 import React from "react";
-import jobs from "./jobs";
+import Access from "../Access/Access";
+import Message from "../Message/Message";
+import Jobs from "../Jobs/Jobs";
+import About from "../About/About.js";
+import HeroSection from "../HeroSection/HeroSection";
+import Gaiyo from "../Gaiyo/Gaiyo";
 
-function home() {
+function Home() {
   return (
     <div>
-      <jobs />
+      <HeroSection />
+      <About />
+      <Message />
+      <Jobs />
+      <Gaiyo />
+      <Access />
     </div>
   );
 }
 
-export default home;
+export default Home;

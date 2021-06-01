@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as Link1 } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
 import { GoX, GoThreeBars } from "react-icons/go";
 // import { Button } from "./Button";
+import Home from "../pages/Home";
 import "./navbar.css";
 import logo from "../../../src/images/logo-clear.png";
 
@@ -29,22 +31,22 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link
+          <Link2
             activeClass="active"
-            to="home"
+            to="/"
             spy={true}
             smooth={true}
             duration={1000}
             className="navbar-logo"
           >
             <img className="navbar-logo" alt="logo" src={logo}></img>
-          </Link>
+          </Link2>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <GoX /> : <GoThreeBars />}
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link
+              <Link1
                 activeClass="active"
                 to="home"
                 spy={true}
@@ -54,10 +56,10 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 ホーム
-              </Link>
+              </Link1>
             </li>
             <li className="nav-item">
-              <Link
+              <Link1
                 activeClass="active"
                 to="about"
                 spy={true}
@@ -67,10 +69,10 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 事業内容
-              </Link>
+              </Link1>
             </li>
             <li className="nav-item">
-              <Link
+              <Link1
                 activeClass="active"
                 to="message"
                 spy={true}
@@ -79,11 +81,12 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                会社概要
-              </Link>
+                社長挨拶
+              </Link1>
             </li>
+
             <li className="nav-item">
-              <Link
+              <Link1
                 activeClass="active"
                 to="jobs"
                 spy={true}
@@ -93,10 +96,23 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 採用情報
-              </Link>
+              </Link1>
             </li>
             <li className="nav-item">
-              <Link
+              <Link1
+                activeClass="active"
+                to="gaiyo"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                会社概要
+              </Link1>
+            </li>
+            <li className="nav-item">
+              <Link1
                 activeClass="active"
                 to="access"
                 spy={true}
@@ -106,7 +122,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 アクセス
-              </Link>
+              </Link1>
             </li>
           </ul>
         </div>

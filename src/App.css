@@ -3,8 +3,17 @@
     sans-serif;
 }
 
+a:hover {
+  color: grey !important;
+  font-weight: 800 !important;
+}
+
 body {
   overflow-x: hidden !important;
+  /* word-break: keep-all !important; */
+  line-break: strict !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
 .container {
   max-width: 100% !important;

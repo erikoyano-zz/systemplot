@@ -28,11 +28,6 @@
   padding: 1rem;
 }
 
-.fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
-}
-
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -78,6 +73,11 @@
 .menu-icon {
   display: none;
   color: black;
+}
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    padding: 0 0.5rem;
+  }
 }
 
 @media screen and (max-width: 960px) {

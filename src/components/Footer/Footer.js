@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 // import { Button } from "./Button";
+import { Link as Link1 } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
 import logo from "../../images/logo-white.png";
 
 function Footer() {
@@ -10,30 +12,64 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>会社情報</h2>
-            <p to="/sign-up">社長挨拶</p>
-            <p to="/sign-up">事業内容</p>
-            <p to="/sign-up">会社概要</p>
+            <Link1
+              activeClass="active"
+              to="message"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              社長挨拶
+            </Link1>
+            <Link1
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              事業内容
+            </Link1>
+            <Link1
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              会社概要
+            </Link1>
           </div>
           <div class="footer-link-items">
             <h2>採用情報</h2>
-            <p to="/">募集要項</p>
-            <p to="/">応募フォーム</p>
+            <Link1
+              activeClass="active"
+              to="jobs"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              募集要項
+            </Link1>
           </div>
           <div class="footer-link-items">
             <h2>アクセス</h2>
           </div>
           <div class="footer-link-items">
             <h2>サイトご利用について</h2>
-            <p to="/"> 個人情報保護方針 </p>
-            <p to="/">個人情報の取り扱い </p>
-            <p to="/">情報セキュリティ基本方針 </p>
+            <Link1 to="/"> 個人情報保護方針 </Link1>
+            <Link1 to="/">個人情報の取り扱い </Link1>
+            <Link1 to="/">情報セキュリティ基本方針 </Link1>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div class="footer-logo">
-          <img src={logo} to="/home" className="social-logo" />
+          <Link2 to="/">
+            {" "}
+            <img src={logo} to="/" className="social-logo" />
+          </Link2>
         </div>
         <small class="website-rights">SystemPlot© 2021</small>
       </div>

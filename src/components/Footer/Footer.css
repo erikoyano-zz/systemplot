@@ -12,7 +12,7 @@
   max-width: auto;
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: #fff !important;
 }
 
 .footer-link-items > h2 {
@@ -34,7 +34,10 @@
   text-align: left;
   width: 180px;
   box-sizing: border-box;
-  color: #fff;
+}
+
+.footer-link-items > a {
+  color: #fff !important;
 }
 
 .website-rights {
@@ -98,6 +101,7 @@
   }
   .footer-link-items {
     margin: 0px;
+    font-size: 70%;
   }
 }
 
