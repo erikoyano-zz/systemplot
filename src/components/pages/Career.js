@@ -1,6 +1,8 @@
 import React from "react";
 import "./Career.css";
 import careerimg from "../../images/career-banner.jpg";
+import { Button } from "antd";
+import { Link as Link2 } from "react-router-dom";
 
 function Career() {
   return (
@@ -66,6 +68,19 @@ function Career() {
             <br /> 年間休日121日 祝日 夏季 冬季 有給 慶弔
           </p>
         </div>
+
+        <Button
+          style={{
+            borderColor: "grey",
+            margin: "auto",
+            display: "grid",
+            width: "10%",
+            textAlign: "center",
+          }}
+          href="/"
+        >
+          ホームへ戻る
+        </Button>
       </div>
     </>
   );

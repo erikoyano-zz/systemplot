@@ -5,24 +5,33 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import { BiTime } from "react-icons/bi";
 import Fade from "react-reveal/Fade";
+import customMarker from "../../images/mapicon.png";
 
-const ebisu = { lat: 35.646966717162854, lng: 139.71008842664898 };
+const yoyogi = { lat: 35.681824374216994, lng: 139.70169945402233 };
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const MapWithMarker = React.memo(function Map() {
-  const { ref, map, google } = useGoogleMaps(process.env.REACT_APP_API_KEY, {
+  const { ref, map, google } = useGoogleMaps(API_KEY, {
     zoom: 16,
-    center: ebisu,
+    center: yoyogi,
   });
   const size = ["500px", "400px"];
   console.log("render MapWithMarkers");
 
   if (map) {
     // execute when map object is ready
-    new google.maps.Marker({ position: ebisu, map });
+    new google.maps.Marker({ position: yoyogi, map });
   }
 
   return (
-    <div clasName="map" ref={ref} style={{ width: size[0], height: size[1] }} />
+    <div clasName="map" ref={ref} style={{ width: size[0], height: size[1] }}>
+      <img
+        src={customMarker}
+        className="marker"
+        lat={35.681824374216994}
+        lng={139.70169945402233}
+      />
+    </div>
   );
 });
 

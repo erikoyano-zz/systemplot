@@ -31,16 +31,9 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link2
-            activeClass="active"
-            to="/"
-            spy={true}
-            smooth={true}
-            duration={1000}
-            className="navbar-logo"
-          >
+          <a href="/" className="navbar-logo">
             <img className="navbar-logo" alt="logo" src={logo}></img>
-          </Link2>
+          </a>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <GoX /> : <GoThreeBars />}
           </div>
