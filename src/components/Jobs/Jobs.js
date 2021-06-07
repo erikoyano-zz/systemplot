@@ -2,7 +2,6 @@ import React from "react";
 import "./Jobs.css";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
-import Career from "../pages/Career";
 
 function Jobs() {
   return (

@@ -2,7 +2,6 @@ import React from "react";
 import "./Career.css";
 import careerimg from "../../images/career-banner.jpg";
 import { Button } from "antd";
-import { Link as Link2 } from "react-router-dom";
 
 function Career() {
   return (

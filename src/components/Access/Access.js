@@ -28,6 +28,7 @@ export const MapWithMarker = React.memo(function Map() {
       <img
         src={customMarker}
         className="marker"
+        alt="marker"
         lat={35.681824374216994}
         lng={139.70169945402233}
       />
