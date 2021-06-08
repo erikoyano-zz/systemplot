@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link as Link1 } from "react-scroll";
-import { Link as Link2 } from "react-router-dom";
+// import { Link as Link2 } from "react-router-dom";
 import { GoX, GoThreeBars } from "react-icons/go";
 // import { Button } from "./Button";
-import Home from "../pages/Home";
+// import Home from "../pages/Home";
 import "./navbar.css";
 import logo from "../../../src/images/logo-clear.png";
 
