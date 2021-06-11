@@ -65,12 +65,10 @@ function Footer() {
       </div>
 
       <div class="footer-bottom">
-        <div class="footer-logo">
-          <Link2 to="/">
-            {" "}
-            <img src={logo} to="/" alt="logooo" className="social-logo" />
-          </Link2>
-        </div>
+        <Link2 to="/">
+          <img src={logo} to="/" alt="logooo" className="social-logo" />
+        </Link2>
+
         <small class="website-rights">SystemPlot© 2021</small>
       </div>
     </div>

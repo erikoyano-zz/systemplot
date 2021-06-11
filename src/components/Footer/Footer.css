@@ -43,7 +43,7 @@
 .website-rights {
   color: #fff;
   margin-bottom: 16px;
-  margin: 10rem;
+  margin-left: 45%;
 }
 
 .social-logo {
@@ -87,6 +87,13 @@
     width: 50%;
     margin-left: 25%;
   }
+  .footer-link-items {
+    margin: 0px;
+    font-size: 60%;
+  }
+  .website-rights {
+    margin-left: 40%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -96,12 +103,16 @@
   .social-logo {
     width: 50%;
   }
-  .website-rights {
-    margin: 9rem;
-  }
+
   .footer-link-items {
-    margin: 0px;
-    font-size: 70%;
+    font-size: 50%;
+  }
+  .footer-link-wrapper {
+    width: 50%;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -114,6 +125,19 @@
     width: 40%;
   }
   .website-rights {
-    margin: 8rem;
+    margin-left: 37%;
+    font-size: 50%;
+  }
+  .footer-link-items {
+    font-size: 50%;
+
+    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .footer-link-wrapper {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
